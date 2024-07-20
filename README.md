@@ -50,8 +50,8 @@ Where:
 ## 3. Reward Space
 The race car’s performance will be assessed using two distinct sets of rewards. The details of the two reward sets are as follows:
 
-### (a) First set of rewards \(R1\) :
-\[ R1(s, a) = \begin{cases}
+### (a) First set of rewards \(R_1\) :
+\[ R_1(s, a) = \begin{cases}
 \text{Step Reward} = -1 \\
 \text{Reward for crossing checkpoints} = 100 \times 2 \text{ subsequent checkpoints} \\
 \text{Penalty for going off-track} = -100 \\
@@ -59,8 +59,8 @@ The race car’s performance will be assessed using two distinct sets of rewards
 \text{Reward for reaching the goal} = +1000
 \end{cases} \]
 
-### (b) Second set of rewards \(R2\) :
-\[ R2(s, a) = \begin{cases}
+### (b) Second set of rewards \(R_2\) :
+\[ R_2(s, a) = \begin{cases}
 \text{Step Reward} = +1 \\
 \text{Reward for crossing checkpoints} = 100 \times 2 \text{ subsequent checkpoints} \\
 \text{Penalty for going off-track} = -100 \\

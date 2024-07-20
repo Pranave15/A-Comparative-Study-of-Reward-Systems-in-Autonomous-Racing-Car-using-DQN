@@ -18,6 +18,9 @@ of 282 units of distance more than the first set of rewards. These findings reve
 that structuring rewards is an important factor and plays a crucial role while
 designing Reinforcement Learning systems.
 
+##Proposed Solution
+![image](https://github.com/user-attachments/assets/f1915be2-f216-413c-a35e-476b7e51dd56)
+
 
 - [Introduction](#introduction)
 - [Installation](#installation)

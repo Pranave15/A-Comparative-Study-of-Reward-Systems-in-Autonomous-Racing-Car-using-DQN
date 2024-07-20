@@ -29,44 +29,6 @@ strategy. The Environment module sets up the environment, creates the track and
 checkpoints, and provides an interface for the agent to interact with
 ![image](https://github.com/user-attachments/assets/f1915be2-f216-413c-a35e-476b7e51dd56)
 
-# RL Formulation
-
-The RL formulation provides a structured way to define and analyze RL problems, facilitating the development of algorithms and strategies for solving them. The following is a description of the formulation used in this particular study.
-
-## 1. State Space
-\[ S : \{(x, y), \theta, \cos(\theta), \sin(\theta), d, i\} \]
-
-Where:
-- \((x, y)\) is the agent position
-- \(\theta\) is the car angle
-- \(\cos(\theta)\) is the cosine of the car angle
-- \(\sin(\theta)\) is the sine of the car angle
-- \(d\) is the distance traveled
-- \(i\) is the current checkpoint index
-
-## 2. Action Space
-\[ A : \{\text{Forward, Forward and Left, Forward and Right}\} \]
-
-## 3. Reward Space
-The race car’s performance will be assessed using two distinct sets of rewards. The details of the two reward sets are as follows:
-
-### (a) First set of rewards \(R_1\) :
-\[ R_1(s, a) = \begin{cases}
-\text{Step Reward} = -1 \\
-\text{Reward for crossing checkpoints} = 100 \times 2 \text{ subsequent checkpoints} \\
-\text{Penalty for going off-track} = -100 \\
-\text{Penalty for backtracking} = -50 \\
-\text{Reward for reaching the goal} = +1000
-\end{cases} \]
-
-### (b) Second set of rewards \(R_2\) :
-\[ R_2(s, a) = \begin{cases}
-\text{Step Reward} = +1 \\
-\text{Reward for crossing checkpoints} = 100 \times 2 \text{ subsequent checkpoints} \\
-\text{Penalty for going off-track} = -100 \\
-\text{Penalty for backtracking} = -50 \\
-\text{Reward for reaching the goal} = +1000
-\end{cases} \]
 ## Environment
 The Pygame environment is set against an expansive 800x600 pixel green backdrop,
 featuring a sleek black elliptical track with a generous width of 60 pixels. Encircling
@@ -77,6 +39,26 @@ beginning of each race. Along the track, ten equidistant white dots act as check
 guiding the car’s path and adding strategic depth to the thrilling simulation of speed
 and precision.
 ![image](https://github.com/user-attachments/assets/6ad4f471-2f59-4814-93db-c8d43e54ccbe)
+
+## Deep Q Network
+The DQN design starts with an input layer handling a state space of 6, followed
+by two dense layers using the Rectified Linear Unit (ReLU) activation function to
+introduce non-linearity and mitigate the vanishing gradient problem. These layers
+capture complex patterns in the data. The output layer, with three neurons and a
+linear activation function, corresponds to the agent’s possible actions, producing Q-values representing predicted future rewards. The model includes a 10,000-unit replay
+buffer, processing batches of 64 samples during training. Key hyper-parameters are
+an initial epsilon of 1.0 for exploration, decaying to 0.01 with a factor of 0.995 per
+episode, and a discount factor (gamma) of 0.99 to weigh future rewards. Each episode
+can last up to 1,000 steps or ends if the agent (race car) leaves the track.
+
+## Results and Analysis
+The agent(race car) has been trained on two sets of rewards. After training the agent
+for 10,000 episodes on both the sets of rewards, it was observed that the agent performed better on the second set of rewards. The graph depicts a plot for
+the episodes (plotted on the x-axis) versus average distance (plotted on the y-axis)
+travelled by the agent for both R1(-1 reward) and R2(+1 reward) sampled for every 500 episodes. R1 is plotted using a dashed red line and R2 using a solid blue line. It can be observed from this plot that R2 works better and the agent is able to learn and travel better distances
+than R1.
+
+
 
 
 - [Introduction](#introduction)

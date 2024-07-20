@@ -67,6 +67,16 @@ The race car’s performance will be assessed using two distinct sets of rewards
 \text{Penalty for backtracking} = -50 \\
 \text{Reward for reaching the goal} = +1000
 \end{cases} \]
+## Environment
+The Pygame environment is set against an expansive 800x600 pixel green backdrop,
+featuring a sleek black elliptical track with a generous width of 60 pixels. Encircling
+an inner sanctum with a radius of 200 pixels and an outer boundary stretching to
+260 pixels, the track offers a challenging course for the red race car, measuring 50x25
+pixels. The 15-pixel-wide start line spans the track’s width at its midpoint, marking the
+beginning of each race. Along the track, ten equidistant white dots act as checkpoints,
+guiding the car’s path and adding strategic depth to the thrilling simulation of speed
+and precision.
+![image](https://github.com/user-attachments/assets/6ad4f471-2f59-4814-93db-c8d43e54ccbe)
 
 
 - [Introduction](#introduction)

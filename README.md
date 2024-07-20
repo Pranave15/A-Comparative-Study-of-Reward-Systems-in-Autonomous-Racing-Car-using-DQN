@@ -35,7 +35,7 @@ The RL formulation provides a structured way to define and analyze RL problems,
 facilitating the development of algorithms and strategies for solving them. The below
 is a description of the formulation used in this particular study.
 1. State Space
-S : {(x, y), θ, cos(θ),sin(θ), d, i)} (1)
+S : {(x, y), θ, cos(θ),sin(θ), d, i)}
 Where,
 (x, y) is the agent position
 θ is the car angle
@@ -44,7 +44,7 @@ sin(θ) is the sine of the car angle
 d is the distance travelled
 i is the current checkpoint index
 2. Action Space
-A : {Forward, Forward and Left, Forward and Right} (2)
+A : {Forward, Forward and Left, Forward and Right}
 3. Reward Space
 The race car’s performance will be assessed using two distinct sets of rewards. The
 details of the two reward sets are as follows:

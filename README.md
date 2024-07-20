@@ -19,6 +19,14 @@ that structuring rewards is an important factor and plays a crucial role while
 designing Reinforcement Learning systems.
 
 ## Proposed Solution
+First, the environment is
+built using Pygame, a Python module ideal for creating GUI and gaming functionalities. Subsequently, several essential modules necessary for training the agent are
+developed. The Deep Q Network module constructs the DQN and defines the layers
+and parameters for each layer. The Replay Buffer module creates a buffer that stores
+the experience tuple (state, action, reward, next state). The Agent module manages
+the agent’s policy, balancing exploration and exploitation through the epsilon-greedy
+strategy. The Environment module sets up the environment, creates the track and
+checkpoints, and provides an interface for the agent to interact with
 ![image](https://github.com/user-attachments/assets/f1915be2-f216-413c-a35e-476b7e51dd56)
 
 

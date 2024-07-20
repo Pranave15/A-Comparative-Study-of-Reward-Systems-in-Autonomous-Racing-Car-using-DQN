@@ -20,7 +20,7 @@ designing Reinforcement Learning systems.
 
 ## Proposed Solution
 First, the environment is
-built using Pygame, a Python module ideal for creating GUI and gaming functionalities. Subsequently, several essential modules necessary for training the agent are
+built using Pygame, a Python module ideal for creating GUI and gaming functionalities. Subsequently, several essential modules necessary for training the agent are
 developed. The Deep Q Network module constructs the DQN and defines the layers
 and parameters for each layer. The Replay Buffer module creates a buffer that stores
 the experience tuple (state, action, reward, next state). The Agent module manages

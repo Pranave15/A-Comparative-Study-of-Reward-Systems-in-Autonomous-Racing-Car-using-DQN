@@ -29,49 +29,45 @@ strategy. The Environment module sets up the environment, creates the track and
 checkpoints, and provides an interface for the agent to interact with
 ![image](https://github.com/user-attachments/assets/f1915be2-f216-413c-a35e-476b7e51dd56)
 
-## RL Formulation
-3.1 RL Formulation
-The RL formulation provides a structured way to define and analyze RL problems,
-facilitating the development of algorithms and strategies for solving them. The below
-is a description of the formulation used in this particular study.
-1. State Space
-S : {(x, y), θ, cos(θ),sin(θ), d, i)}
-Where,
-(x, y) is the agent position
-θ is the car angle
-cos(θ) is the cosine of the car angle
-sin(θ) is the sine of the car angle
-d is the distance travelled
-i is the current checkpoint index
-2. Action Space
-A : {Forward, Forward and Left, Forward and Right}
-3. Reward Space
-The race car’s performance will be assessed using two distinct sets of rewards. The
-details of the two reward sets are as follows:
-4
-(a) First set of rewards R1 :
-R1(s, a) =
-
-
-
-Step Reward = −1
-Reward for crossing checkpoints = 100 × 2
-subsequent checkpoints
-Penalty for going off-track = −100
-Penalty for backtracking = −50
-Reward for reaching the goal = +1000
-(3)
-(b) Second set of rewards R2 :
-R2(s, a) =
-
-
-
-Step Reward = +1
-Reward for crossing checkpoints = 100 × 2
-subsequent checkpoints
-Penalty for going off-track = −100
-Penalty for backtracking = −50
-Reward for reaching the goal = +1000
+# RL Formulation
+
+The RL formulation provides a structured way to define and analyze RL problems, facilitating the development of algorithms and strategies for solving them. The following is a description of the formulation used in this particular study.
+
+## 1. State Space
+\[ S : \{(x, y), \theta, \cos(\theta), \sin(\theta), d, i\} \]
+
+Where:
+- \((x, y)\) is the agent position
+- \(\theta\) is the car angle
+- \(\cos(\theta)\) is the cosine of the car angle
+- \(\sin(\theta)\) is the sine of the car angle
+- \(d\) is the distance traveled
+- \(i\) is the current checkpoint index
+
+## 2. Action Space
+\[ A : \{\text{Forward, Forward and Left, Forward and Right}\} \]
+
+## 3. Reward Space
+The race car’s performance will be assessed using two distinct sets of rewards. The details of the two reward sets are as follows:
+
+### (a) First set of rewards \(R1\) :
+\[ R1(s, a) = \begin{cases}
+\text{Step Reward} = -1 \\
+\text{Reward for crossing checkpoints} = 100 \times 2 \text{ subsequent checkpoints} \\
+\text{Penalty for going off-track} = -100 \\
+\text{Penalty for backtracking} = -50 \\
+\text{Reward for reaching the goal} = +1000
+\end{cases} \]
+
+### (b) Second set of rewards \(R2\) :
+\[ R2(s, a) = \begin{cases}
+\text{Step Reward} = +1 \\
+\text{Reward for crossing checkpoints} = 100 \times 2 \text{ subsequent checkpoints} \\
+\text{Penalty for going off-track} = -100 \\
+\text{Penalty for backtracking} = -50 \\
+\text{Reward for reaching the goal} = +1000
+\end{cases} \]
+
 
 - [Introduction](#introduction)
 - [Installation](#installation)

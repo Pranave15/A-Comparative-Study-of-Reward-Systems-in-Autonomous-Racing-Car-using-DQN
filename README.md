@@ -74,15 +74,19 @@ than R1.
 <div align="center">
   <img src="https://github.com/user-attachments/assets/efd64f23-3f07-42d4-bfa4-5f02203b2bf5" alt="result2">
 </div>
-- [Introduction](#introduction)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Reward Systems](#reward-systems)
-- [Results](#results)
-- [Contributing](#contributing)
-- [License](#license)
-- [Acknowledgments](#acknowledgments)
-
-## Introduction
-
-The goal of this project is to develop and train autonomous racing cars using Deep Q-Learning (DQN) and this is the Readme.md file.
+<div>
+  <img src="https://github.com/user-attachments/assets/60b6c4e5-40d4-4367-a1c2-114bf13b8d90" alt="result3">
+</div>
+## Future Work
+Comprehensively, even though the study has extensively analysed, how
+impactful and crucial it is to design a reward system, yet it packs a lot of future work
+that can be worked upon to make the study better and more application oriented to
+the daily life .
+Future work could include refining hyper-parameters, a task that has the potential to significantly boost performance. This includes tweaking the exploration rate,
+learning rate, state and action space values. Making the neural network level changes
+like, employing a Double Deep Q-Networks(DDQNs) might be a worthful upgrade and
+might lead to more efficient and robust training of the agent. The robustness can also
+be achieved by designing a more complex neural network that has more layers and its
+compatible activation functions. The state space being the input for the neural network, increasing its size, by including more metrices that governs the behaviour of
+the agent will result in a an agent that is more sensitive for the learning and with the
+environment.

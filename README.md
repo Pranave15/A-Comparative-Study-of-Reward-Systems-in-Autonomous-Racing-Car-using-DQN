@@ -1,4 +1,4 @@
-# Optimizing Performance in Autonomous Racing Cars Using Deep Q-Learning: A Comparative Study of Reward Systems
+![image](https://github.com/user-attachments/assets/8042d264-1239-4588-997b-776a9a9b32d8)# Optimizing Performance in Autonomous Racing Cars Using Deep Q-Learning: A Comparative Study of Reward Systems
 
 ## Overview
 
@@ -66,7 +66,14 @@ than R1.
 <div align="center">
   <img src="https://github.com/user-attachments/assets/6c63e91f-87ae-4181-adeb-0ec114623e83" alt="Graph">
 </div>
-
+## Distance covered by the agent at 5000 episodes with R2(+1) rewards.
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/be4cdcd2-6986-4c13-9146-3fa11a943fd2" alt="result1">
+</div>
+## Distance covered by the agent at 5000 episodes with R1(-1) rewards.
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/efd64f23-3f07-42d4-bfa4-5f02203b2bf5" alt="result2">
+</div>
 - [Introduction](#introduction)
 - [Installation](#installation)
 - [Usage](#usage)

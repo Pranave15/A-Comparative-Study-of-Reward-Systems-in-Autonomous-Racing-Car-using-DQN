@@ -63,6 +63,9 @@ for 10,000 episodes on both the sets of rewards, it was observed that the agent 
 the episodes (plotted on the x-axis) versus average distance (plotted on the y-axis)
 travelled by the agent for both R1(-1 reward) and R2(+1 reward) sampled for every 500 episodes. R1 is plotted using a dashed red line and R2 using a solid blue line. It can be observed from this plot that R2 works better and the agent is able to learn and travel better distances
 than R1.
+<div align="center">
+  <img src=![image]("https://github.com/user-attachments/assets/6c63e91f-87ae-4181-adeb-0ec114623e83" alt="Graph">)
+</div>
 
 - [Introduction](#introduction)
 - [Installation](#installation)

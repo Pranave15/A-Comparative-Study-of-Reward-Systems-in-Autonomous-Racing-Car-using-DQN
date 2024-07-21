@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/8042d264-1239-4588-997b-776a9a9b32d8)# Optimizing Performance in Autonomous Racing Cars Using Deep Q-Learning: A Comparative Study of Reward Systems
+## Optimizing Performance in Autonomous Racing Cars Using Deep Q-Learning: A Comparative Study of Reward Systems
 
 ## Overview
 

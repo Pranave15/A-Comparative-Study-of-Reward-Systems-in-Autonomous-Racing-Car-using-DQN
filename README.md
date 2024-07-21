@@ -38,7 +38,7 @@ pixels. The 15-pixel-wide start line spans the track’s width at its midpoint, 
 beginning of each race. Along the track, ten equidistant white dots act as checkpoints,
 guiding the car’s path and adding strategic depth to the thrilling simulation of speed
 and precision.
-![image](https://github.com/user-attachments/assets/6ad4f471-2f59-4814-93db-c8d43e54ccbe)
+   ![image](https://github.com/user-attachments/assets/6ad4f471-2f59-4814-93db-c8d43e54ccbe)
 
 ## Deep Q Network
 The DQN design starts with an input layer handling a state space of 6, followed

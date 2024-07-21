@@ -74,15 +74,16 @@ than R1.
 <div align="center">
   <img src="https://github.com/user-attachments/assets/efd64f23-3f07-42d4-bfa4-5f02203b2bf5" alt="result2">
 </div>
+
 <div>
-  <img src="https://github.com/user-attachments/assets/60b6c4e5-40d4-4367-a1c2-114bf13b8d90" alt="result3">
+  <img src="https://github.com/user-attachments/assets/7135e074-47e3-4104-9fb8-b6ac00ee1084" alt="result3">
 </div>
 ## Future Work
 Comprehensively, even though the study has extensively analysed, how
 impactful and crucial it is to design a reward system, yet it packs a lot of future work
 that can be worked upon to make the study better and more application oriented to
 the daily life .
-Future work could include refining hyper-parameters, a task that has the potential to significantly boost performance. This includes tweaking the exploration rate,
+Future work could include refining hyper-parameters, a task that has the potential to significantly boost performance. This includes tweaking the exploration rate,
 learning rate, state and action space values. Making the neural network level changes
 like, employing a Double Deep Q-Networks(DDQNs) might be a worthful upgrade and
 might lead to more efficient and robust training of the agent. The robustness can also

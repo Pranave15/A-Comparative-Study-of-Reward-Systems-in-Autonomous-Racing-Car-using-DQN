@@ -82,12 +82,5 @@ than R1.
 Comprehensively, even though the study has extensively analysed, how
 impactful and crucial it is to design a reward system, yet it packs a lot of future work
 that can be worked upon to make the study better and more application oriented to
-the daily life .
-Future work could include refining hyper-parameters, a task that has the potential to significantly boost performance. This includes tweaking the exploration rate,
-learning rate, state and action space values. Making the neural network level changes
-like, employing a Double Deep Q-Networks(DDQNs) might be a worthful upgrade and
-might lead to more efficient and robust training of the agent. The robustness can also
-be achieved by designing a more complex neural network that has more layers and its
-compatible activation functions. The state space being the input for the neural network, increasing its size, by including more metrices that governs the behaviour of
-the agent will result in a an agent that is more sensitive for the learning and with the
-environment.
+the daily life .Future work could include refining hyper-parameters, a task that has the potential to significantly boost performance. This includes tweaking the exploration rate,learning rate, state and action space values. Making the neural network level changes like, employing a Double Deep Q-Networks(DDQNs) might be a worthful upgrade and
+might lead to more efficient and robust training of the agent. The robustness can also be achieved by designing a more complex neural network that has more layers and its compatible activation functions. The state space being the input for the neural network, increasing its size, by including more metrices that governs the behaviour ofthe agent will result in a an agent that is more sensitive for the learning and with the environment.

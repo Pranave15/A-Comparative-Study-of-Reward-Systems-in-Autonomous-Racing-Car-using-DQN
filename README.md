@@ -74,7 +74,7 @@ than R1.
 <div align="center">
   <img src="https://github.com/user-attachments/assets/efd64f23-3f07-42d4-bfa4-5f02203b2bf5" alt="result2">
 </div>
-
+## Agent’s behaviour with both the sets of rewards.
 <div>
   <img src="https://github.com/user-attachments/assets/7135e074-47e3-4104-9fb8-b6ac00ee1084" alt="result3">
 </div>

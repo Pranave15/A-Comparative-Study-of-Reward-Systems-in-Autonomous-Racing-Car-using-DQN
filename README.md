@@ -27,7 +27,10 @@ the experience tuple (state, action, reward, next state). The Agent module manag
 the agent’s policy, balancing exploration and exploitation through the epsilon-greedy
 strategy. The Environment module sets up the environment, creates the track and
 checkpoints, and provides an interface for the agent to interact with
-![image](https://github.com/user-attachments/assets/f1915be2-f216-413c-a35e-476b7e51dd56)
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/f1915be2-f216-413c-a35e-476b7e51dd56" alt="Environment Image">
+</div>
 
 ## Environment
 The Pygame environment is set against an expansive 800x600 pixel green backdrop,
@@ -37,7 +40,11 @@ an inner sanctum with a radius of 200 pixels and an outer boundary stretching to
 pixels. The 15-pixel-wide start line spans the track’s width at its midpoint, marking the
 beginning of each race. Along the track, ten equidistant white dots act as checkpoints,
 guiding the car’s path and adding strategic depth to the thrilling simulation of speed
-and precision.![image](https://github.com/user-attachments/assets/6ad4f471-2f59-4814-93db-c8d43e54ccbe)
+and precision.
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/6ad4f471-2f59-4814-93db-c8d43e54ccbe" alt="Track Image">
+</div>
 
 ## Deep Q Network
 The DQN design starts with an input layer handling a state space of 6, followed
@@ -54,11 +61,8 @@ can last up to 1,000 steps or ends if the agent (race car) leaves the track.
 The agent(race car) has been trained on two sets of rewards. After training the agent
 for 10,000 episodes on both the sets of rewards, it was observed that the agent performed better on the second set of rewards. The graph depicts a plot for
 the episodes (plotted on the x-axis) versus average distance (plotted on the y-axis)
-travelled by the agent for both R1(-1 reward) and R2(+1 reward) sampled for every 500 episodes. R1 is plotted using a dashed red line and R2 using a solid blue line. It can be observed from this plot that R2 works better and the agent is able to learn and travel better distances
+travelled by the agent for both R1(-1 reward) and R2(+1 reward) sampled for every 500 episodes. R1 is plotted using a dashed red line and R2 using a solid blue line. It can be observed from this plot that R2 works better and the agent is able to learn and travel better distances
 than R1.
-
-
-
 
 - [Introduction](#introduction)
 - [Installation](#installation)
@@ -71,4 +75,4 @@ than R1.
 
 ## Introduction
 
-The goal of this project is to develop and train autonomous racing cars using Deep Q-Learning (DQN) and
+The goal of this project is to develop and train autonomous racing cars using Deep Q-Learning (DQN) and this is the Readme.md file.
